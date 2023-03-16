@@ -1,0 +1,233 @@
+{
+	"info": {
+		"_postman_id": "1ece6704-e4bb-46ca-b7af-2d1e9c093e85",
+		"name": "AIQ",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23437375"
+	},
+	"item": [
+		{
+			"name": "GET ALL DATA",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8888/AIQ/api/geolocations",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"AIQ",
+						"api",
+						"geolocations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CREATE DATA",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "city",
+							"value": "Kaduna",
+							"type": "text"
+						},
+						{
+							"key": "longitude",
+							"value": "321.333",
+							"type": "text"
+						},
+						{
+							"key": "latitude",
+							"value": "112.3321",
+							"type": "text"
+						},
+						{
+							"key": "radius",
+							"value": "34",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8888/AIQ/api/geolocation/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"AIQ",
+						"api",
+						"geolocation",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE DATA",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "city",
+							"value": "Ogun",
+							"type": "text"
+						},
+						{
+							"key": "longitude",
+							"value": "177.048",
+							"type": "text"
+						},
+						{
+							"key": "latitude",
+							"value": "211.3343",
+							"type": "text"
+						},
+						{
+							"key": "radius",
+							"value": "90",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "5",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8888/AIQ/api/geolocation/update/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"AIQ",
+						"api",
+						"geolocation",
+						"update",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SHOW SINGLE DATA",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8888/AIQ/api/geolocation/show/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"AIQ",
+						"api",
+						"geolocation",
+						"show",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE DATA",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8888/AIQ/api/geolocation/delete/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"AIQ",
+						"api",
+						"geolocation",
+						"delete",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
