@@ -1,0 +1,7 @@
+RewriteEngine On
+
+RewriteRule ^api/geolocations$ index.php/geolocations [NC,L]
+RewriteRule ^api/geolocation/show/([0-9_-]*)$ index.php/geolocation/show?id=$1 [NC,L]
+RewriteRule ^api/geolocation/create$ index.php/geolocation/create [NC,L]
+RewriteRule ^api/geolocation/update/([0-9_-]*)$ index.php/geolocation/update?id=$1 [NC,L]
+RewriteRule ^api/geolocation/delete/([0-9_-]*)$ index.php/geolocation/delete?id=$1 [NC,L]
